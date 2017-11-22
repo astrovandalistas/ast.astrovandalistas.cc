@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+    {% include analytics.html %}
+  </head>
+  <body>
+    {% include navbar.html %}
+    <div id="main-div">
+      <div class="post-container">
+        <div id="post">
+          <div class="post-title">{{ page.title }}</div>
+          <div class="post-date">{{ page.date | date: "%d %B %Y" }}</div>
+          <content>
+            {{ content }}
+            {% include swipebox.html %}
+          </content>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
