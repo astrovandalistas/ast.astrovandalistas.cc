@@ -16,7 +16,7 @@
     <a class="menu-item" href="{{site.baseurl}}/bangMTY/">#bangMTY</a>
     <a class="menu-item" href="{{site.baseurl}}/somos/">Somos</a>
   </div>
-  <hr class="menu-hr">
+  <hr class="menu-hr-mobile">
   <div class="menu-social">
     {% for social in site.social %}
       {% unless social[1] == "" %}
@@ -27,6 +27,7 @@
     {% endfor %}
   </div>
 </div>
+<hr class="menu-hr-desktop">
 
 <script>
   function showMenu() {

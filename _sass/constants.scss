@@ -2,6 +2,7 @@ $BACKGROUND: #222;
 $TEXT-BACKGROUND: #222;
 
 $TEXT-COLOR: #ddd;
+$RED-ACCENT: #c13a27;
 
 $LINK-COLOR: $TEXT-COLOR;
 $LINK-COLOR-VISITED: $LINK-COLOR;
@@ -10,7 +11,8 @@ $LINK-COLOR-HOVER: lighten($LINK-COLOR, 50%);
 $MENU: $TEXT-COLOR;
 $MENU-HOVER: lighten($MENU, 20%);
 
-$DESKTOP_WIDTH: 780px;
+$TABLET-WIDTH: 780px;
+$DESKTOP-COLUMN-WIDTH: 920px;
 $COLUMN-HORIZONTAL-BORDER: 10px;
 
 $MENU-HORIZONTAL-ITEM-SPACING: 50px;
@@ -23,6 +25,6 @@ $TRANSITION-PERIOD: 0.15s;
 
 @mixin media-query($canvas) {
   @if $canvas == DESKTOP {
-   @media only screen and (min-width: $DESKTOP_WIDTH) { @content; }
+   @media only screen and (min-width: $TABLET-WIDTH) { @content; }
   }
 }

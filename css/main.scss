@@ -5,10 +5,12 @@
 @import 'fonts';
 
 body {
-  background: $BACKGROUND;
-  margin: 8px;
+  //background: $BACKGROUND;
+  background: #ff0;
+  margin: 0 8px;
+  box-sizing: border-box;
   @include media-query(DESKTOP) {
-    margin: 25px;
+    margin: 0 25px;
   }
 }
 
@@ -16,7 +18,8 @@ body {
   display: block;
   z-index: 10;
   position: absolute;
-  padding: $PAGE-LATERAL-SPACE/2 $PAGE-LATERAL-SPACE/2 $RESPONSIVE-SPACING/2;
+  margin-left: 10px;
+  padding: $PAGE-LATERAL-SPACE/2 $PAGE-LATERAL-SPACE/2;
 
   @include media-query(DESKTOP) {
     display: none;
@@ -47,8 +50,9 @@ body {
     justify-content: center;
     position: relative;
     width: 100%;
+    max-width: $DESKTOP-COLUMN-WIDTH;
     padding: 20px 0;
-    margin-bottom: $PAGE-LATERAL-SPACE;
+    margin: 0 auto;
     transition: none;
   }
 
@@ -104,28 +108,54 @@ body {
       margin: 0 8px;
     }
   }
+}
 
-  .menu-hr {
-    color: #eee;
-    background-color: #222;
-    display: block;
-    width: 50%;
-    height: 2px;
-    border: none;
-    @include media-query(DESKTOP) {
-      display: none;
-    }
+.menu-hr-mobile {
+  color: $RED-ACCENT;
+  background-color: $RED-ACCENT;
+  display: block;
+  width: 50%;
+  height: 3px;
+  border: none;
+  @include media-query(DESKTOP) {
+    display: none;
   }
 }
 
+.menu-hr-desktop {
+  display: none;
+  @include media-query(DESKTOP) {
+    color: $RED-ACCENT;
+    background-color: $RED-ACCENT;
+    display: block;
+    max-width: $DESKTOP-COLUMN-WIDTH;
+    height: 8px;
+    border: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
 .logo-container {
-  width: 100%;
-  margin: 0 auto;
+  display: block;
+  margin: 0 $PAGE-LATERAL-SPACE/2;
+  box-sizing: border-box;
+  background-color: $BACKGROUND;
+  padding-top: 32px;
+
+  @include media-query(DESKTOP) {
+    width: 100%;
+    max-width: $DESKTOP-COLUMN-WIDTH;
+    margin: 0 auto;
+  }
 
   .logo-image {
     width: 100%;
+    max-width: $DESKTOP-COLUMN-WIDTH;
     height: 55vw;
     max-height: 400px;
+    background-color: $BACKGROUND;
+    margin: 0 auto;
     background-image: url('{{ site.baseurl }}/assets/covers/cover.jpg');
     background-position: center center;
     background-size: contain;
@@ -141,9 +171,12 @@ body {
   -webkit-align-items: center;
   align-items: center;
 
-  margin: 0 $PAGE-LATERAL-SPACE/2 $PAGE-LATERAL-SPACE/2;
+  margin: 0 $PAGE-LATERAL-SPACE/2;
+
   @include media-query(DESKTOP) {
-    margin: 0 $PAGE-LATERAL-SPACE $PAGE-LATERAL-SPACE;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $DESKTOP-COLUMN-WIDTH;
   }
 
   .video-wrapper-16x9 {
@@ -196,10 +229,9 @@ body {
   box-sizing: border-box;
   padding: 40px 7%;
   background-color: $TEXT-BACKGROUND;
-  margin-bottom: $MENU-VERTICAL-MARGIN;
 
   @include media-query(DESKTOP) {
-    padding: 0 5%;
+    padding: 20px 5%;
   }
 }
 
@@ -267,7 +299,7 @@ body {
     flex-wrap: nowrap;
     -webkit-flex-direction: column;
     flex-direction: column;
-    padding: $LIST-VERTICAL-SPACING 0;
+    padding: 0;
     border-bottom: 2px solid #000;
 
     transition: box-shadow $TRANSITION-PERIOD linear;

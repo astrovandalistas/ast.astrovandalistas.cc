@@ -1,7 +1,6 @@
 @import 'constants';
 
-$family-sans: 'Open Sans', 'Arial';
-$family-serif: 'Cardo', 'serif';
+$family-sans: 'Ubuntu', sans-serif;
 
 $menu-title-size: 1.4rem;
 $menu-link-desktop: 0.9rem;
@@ -76,13 +75,13 @@ a {
 
 #navbar, #navbar-mobile {
   .menu-item, .menu-icon {
-    font: bold $menu-link-mobile $family-serif;
+    font: bold $menu-link-mobile $family-sans;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: $MENU;
 
     @include media-query(DESKTOP) {
-      font: bold $menu-link-desktop $family-serif;
+      font: bold $menu-link-desktop $family-sans;
     }
     
     &:visited {
@@ -119,7 +118,7 @@ a {
 
 #post {
   .post-title {
-    font: bold $post-title-size $family-serif;
+    font: bold $post-title-size $family-sans;
     color: $TEXT-COLOR;
     text-transform: uppercase;
     text-align: left;
@@ -146,7 +145,7 @@ a {
 
 #post-list {
   .post-title-container {
-    font: normal $home-title-size $family-serif;
+    font: normal $home-title-size $family-sans;
     text-decoration: none;
     cursor: pointer;
     color: $TEXT-COLOR;
@@ -179,6 +178,6 @@ a {
 }
 
 .sidebar-post-title {
-  font-family: $family-serif;
+  font-family: $family-sans;
   text-transform: uppercase;
 }
