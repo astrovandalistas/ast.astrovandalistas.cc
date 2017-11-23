@@ -13,4 +13,4 @@ El AST puede ser activada y fácilmente replicada por personas en otros lugares 
 
 Activa el AST a traves de twitter usando #bangMTY
 
-![]({{ site.baseurl }}/assets/posts/bangMTY.jpg)
+![]({{ site.baseurl }}/assets/posts/bangMTY.png)

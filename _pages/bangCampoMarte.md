@@ -9,7 +9,7 @@ Encontramos una estructura metálica de 4 x 6 mts ubicada frente al Campo Marte,
 
 Intervenimos la estructura con 64 tubos galvanizados conectados a un motor. Este mecanismo es activado a distancia cada vez que alguien escribe #BANGCampoMarte en Twitter. Esta es el Arma Sonora Telemática.
 
-![]({{ site.baseurl }}/assets/posts/bang.jpg)
+![]({{ site.baseurl }}/assets/posts/bang.png)
 
 Un arma es un dispositivo que amplía la dirección y la magnitud de una fuerza.
 
