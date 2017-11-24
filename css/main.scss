@@ -303,8 +303,8 @@ body {
     flex-wrap: nowrap;
     -webkit-flex-direction: column;
     flex-direction: column;
-    padding: 0;
-    border-bottom: 2px solid #000;
+    padding: 32px 0;
+    border-bottom: 3px solid $RED_ACCENT;
 
     transition: box-shadow $TRANSITION-PERIOD linear;
     box-shadow: none;
@@ -329,10 +329,10 @@ body {
   .post-image {
     width: 100%;
     height: 100%;
-    min-height: 200px;
+    min-height: 256px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .post-title-container {
