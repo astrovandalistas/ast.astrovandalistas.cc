@@ -8,6 +8,6 @@ En esta ocasión estamos trabajando con Raspberry Pi para controlar los relays q
 
 ![](/assets/posts/bangMTY_schematics.jpg)
 
-El código esta programado en Phyton y se corre directamente en el Raspberry.
+El arma está programado en Phyton y se corre directamente en el Raspberry Pi.
 
-[Código en Github](https://github.com/astrovandalistas/bangMTYRpiPy){:target="_blank"}
+[El código está en Github](https://github.com/astrovandalistas/bangMTYRpiPy){:target="_blank"}

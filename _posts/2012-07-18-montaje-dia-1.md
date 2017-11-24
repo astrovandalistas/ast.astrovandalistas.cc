@@ -1,5 +1,5 @@
 ---
-title: Estructura de tubos - Día 1
+title: Día 1 - Estructura de tubos
 cover: /assets/posts/bang_montage1_0.jpg
 swipebox: bang_montage1_
 ---

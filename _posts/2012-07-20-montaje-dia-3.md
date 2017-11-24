@@ -1,5 +1,5 @@
 ---
-title: Montaje de los tubos - Día 3
+title: Día 3 - Montaje de los tubos
 cover: /assets/posts/bang_montage3_4.jpg
 swipebox: bang_montage3_
 ---

@@ -1,5 +1,5 @@
 ---
-title: Fijando el motor - Día 2
+title: Día 2 - Fijando el motor
 cover: /assets/posts/bang_montage2_0.jpg
 swipebox: bang_montage2_
 ---
