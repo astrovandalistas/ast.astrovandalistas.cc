@@ -11,8 +11,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  margin: 0 8px;
+  margin: 0 auto;
   box-sizing: border-box;
+
   @include media-query(DESKTOP) {
     margin: 0 25px;
   }
@@ -75,6 +76,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 
     @include media-query(DESKTOP) {
       width: 66%;
@@ -142,7 +144,8 @@ body {
 }
 .logo-container {
   display: block;
-  margin: 0 $PAGE-LATERAL-SPACE/2;
+  width: 90%;
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: $BACKGROUND;
   padding-top: 32px;
@@ -168,14 +171,10 @@ body {
 }
 
 #main-div {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-
-  margin: 0 $PAGE-LATERAL-SPACE/2;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @include media-query(DESKTOP) {
     margin: 0 auto;
