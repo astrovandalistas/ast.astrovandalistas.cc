@@ -143,30 +143,28 @@ a {
   }
 }
 
-#post-list {
-  .post-title-container {
-    font: normal $home-title-size $family-sans;
-    text-decoration: none;
-    cursor: pointer;
-    color: $TEXT-COLOR;
-    letter-spacing: 0.04em;
+.post-title-container {
+  font: normal $home-title-size $family-sans;
+  text-decoration: none;
+  cursor: pointer;
+  color: $TEXT-COLOR;
+  letter-spacing: 0.04em;
 
-    .post-title {
-      font-weight: 900;
-    }
+  .post-title {
+    font-weight: 900;
+  }
 
-    .post-date {
-      font-size: $text-size-desktop;
-      font-weight: 100;
-      font-family: $family-sans;
-      letter-spacing: normal;
-      text-transform: none;
-    }
+  .post-date {
+    font-size: $text-size-desktop;
+    font-weight: 100;
+    font-family: $family-sans;
+    letter-spacing: normal;
+    text-transform: none;
+  }
 
-    .post-preview {
-      font: normal $text-size-desktop $family-sans;
-      text-transform: none;
-    }
+  .post-preview {
+    font: normal $text-size-desktop $family-sans;
+    text-transform: none;
   }
 }
 
