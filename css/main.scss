@@ -25,7 +25,7 @@ body {
   justify-content: center;
   position: relative;
   width: 90%;
-  padding: 20px 0;
+  padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: $TEXT-BACKGROUND;
@@ -34,11 +34,12 @@ body {
     width: 100%;
     max-width: $DESKTOP-COLUMN-WIDTH;
     flex-direction: row;
+    padding: 20px 0;
   }
 
   .menu-pages {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
@@ -46,6 +47,7 @@ body {
 
     @include media-query(DESKTOP) {
       width: 66%;
+      flex-direction: row;
     }    
   }
 
@@ -85,7 +87,7 @@ body {
   width: 50%;
   height: 3px;
   border: none;
-  margin: 20px auto;
+  margin: 10px auto;
   @include media-query(DESKTOP) {
     display: none;
   }
